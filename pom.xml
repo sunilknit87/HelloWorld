@@ -19,9 +19,9 @@
 	<plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-war-plugin</artifactId>
-            <configuration>
+           <!--  <configuration>
                 <outputDirectory>C:\apache-tomcat-8.5.41\webapps\</outputDirectory>
-            </configuration>
+            </configuration> -->
         </plugin>
     </plugins>
     </pluginManagement>
