@@ -2,12 +2,15 @@ package org.ravi.helloworld;
 
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+
+import junit.framework.Assert;
 
 public class HelloTest {
 
@@ -23,11 +26,12 @@ public class HelloTest {
 		driver.manage().timeouts().implicitlyWait(1, TimeUnit.MINUTES);
 	}
 
+	@SuppressWarnings("deprecation")
 	@Test
 	public void f() {
 
-		//text = driver.findElement(By.xpath("html/body/h2"));
-		//Assert.assertEquals(driver.getTitle(), "");
+		text = driver.findElement(By.xpath("html/body/h2"));
+		Assert.assertEquals(driver.getTitle(), "");
 		//System.out.println("Test Passed");
 
 	}
