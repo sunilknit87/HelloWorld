@@ -20,7 +20,7 @@
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-war-plugin</artifactId>
             <configuration>
-                <outputDirectory>C:\apache-tomcat-7.0.82\webapps\</outputDirectory>
+                <outputDirectory>C:\apache-tomcat-8.5.41\webapps\</outputDirectory>
             </configuration>
         </plugin>
     </plugins>
